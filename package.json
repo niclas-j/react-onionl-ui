@@ -1,0 +1,44 @@
+{
+  "name": "react-onionl-ui",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.whole.json",
+    "build": "vite build --config vite.lib.config.ts",
+    "demo": "vite --config demo/vite.config.ts"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8",
+    "typescript": "^5.7.2",
+    "jsdom": "^25.0.1",
+    "@vitest/coverage-v8": "^2.1.8",
+    "sass": "^1.83.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@testing-library/dom": "^10.0.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.5.2",
+    "happy-dom": "~20.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "unocss": "0.64.1",
+    "@unocss/preset-mini": "0.64.1",
+    "unocss-preset-scrollbar": "0.3.1"
+  },
+  "description": "React UI components, migrated from onionl-ui (Vue) with an LLM",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "initials": "3.1.2",
+    "driver.js": "1.3.5",
+    "imask": "7.6.1"
+  }
+}

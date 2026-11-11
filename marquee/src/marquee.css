@@ -1,0 +1,35 @@
+.ol-marquee__animate {
+  animation: marquee var(--onl-marquee-duration) linear infinite;
+}
+
+.ol-marquee__animate--reverse {
+  animation: marquee-reverse var(--onl-marquee-duration) linear infinite;
+}
+
+.ol-marquee__animate--vertical {
+  animation: marquee-vertical var(--onl-marquee-duration) linear infinite;
+}
+
+.ol-marquee__animate--vertical-reverse {
+  animation: marquee-vertical-reverse var(--onl-marquee-duration) linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(calc(-100% - var(--onl-marquee-gap))); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - var(--onl-marquee-gap))); }
+}
+
+@keyframes marquee-vertical {
+  0% { transform: translateY(calc(-100% - var(--onl-marquee-gap))); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes marquee-vertical-reverse {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(-100% - var(--onl-marquee-gap))); }
+}

@@ -1,0 +1,35 @@
+.ol-dialog__mask {
+  animation: dialog-fade-in 0.3s;
+}
+
+.dialog-fly-enter-active .ol-dialog__container>* {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.ol-dialog__container>* {
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.ol-dialog--fade-out {
+  animation: dialog-fade-out 0.3s forwards;
+}
+
+@keyframes dialog-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dialog-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
